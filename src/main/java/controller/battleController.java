@@ -27,7 +27,7 @@ public class battleController {
 	
 
 	@GetMapping(path="/all")
-	@CrossOrigin(origins = "http://localhost:4200", maxAge = 3600)
+	@CrossOrigin(origins = "https://gatheaditya.github.io", maxAge = 3600)
 	public @ResponseBody Iterable<battleModel> fetchall()
 	{
 		return cr.findAll();
